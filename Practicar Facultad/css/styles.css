@@ -1,0 +1,28 @@
+nav {
+    background-color: green;
+    padding: 10px;
+    border-style: round;
+
+}
+
+body {
+    background-color: lightgreen;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    padding: 5px;
+    color: black;
+    background-color: yellowgreen;
+}
+
+p{
+    
+    color:black;
+    background-color: lightskyblue;
+}
+
+.texto{
+display:flex;
+size:90%
+}
