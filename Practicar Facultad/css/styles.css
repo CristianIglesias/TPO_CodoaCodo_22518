@@ -1,28 +1,266 @@
-nav {
-    background-color: green;
-    padding: 10px;
-    border-style: round;
-
+/*selector universal afecta a todos los elementos*/
+*{
+    font-family: Montserrat, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    /*le saca los margenes a todo, luego se lo doy por elemento*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: lightgreen;
-    font-family: 'Times New Roman', Times, serif;
+/* HEADER y BARRA DE MENU*/
+
+header {
+    /* ancho de toda la pagina */
+    width: 100%;
+    height: 4.126em;
+    /* para que se mantenga por emcima de todo */
+    position: fixed;
+    z-index: 100;
+    background-color: #25271C;
+    color: #f3d448;
+    padding: 0.625em;
 }
 
-a{
-    padding: 5px;
-    color: black;
-    background-color: yellowgreen;
+.logo_menu{
+    width: 100px;
 }
 
-p{
+.container_menu{
+    width: 98%;
+    margin: auto;
+}
+
+#menu_bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 1.75em;
+    margin: 0.375em 0;
+
+    /* cuando pasa el mause aparece la manito para apretar */
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 4.125em;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.9);
+
+    /* aplico una transicion para que cuando aprete en las lineas se oculte o se muestre */
+    /* oculta el menu hasta que es activado */
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+header .container_menu{
+    display: table;
+}
+
+.menu ul li {
+    /* sacamos los puntos de las listas y demas */
+    list-style: none;
+}
+
+.menu ul li a{
+    /* saca las lineas de abajo de los links */
+    text-decoration: none;
+    color: #ffd000;
+    /* ponemos todo en mayuscula */
+    text-transform: uppercase;
+    display: block;
+    height: 3.125em;
+    padding: 1em;
+    border-bottom: 0.0625em solid #ffd000;
+}
+
+.menu ul li a:hover{
+    background: #ffd519e1;
+    color: #25271C;
+}
+
+/* para que al cliquear el logo aparezca el menu desplegable. Cuando se activa el checkbox se activa el .menu */
+#menu_bar:checked~.menu{
+    transform: translateX(0%);
+}
+
+/* BANNER */
+
+/* a todas las secciones de la pagina las va separar por un margen */
+
+section{
+    width: 100%;
+    margin-bottom: 1.5625em;
+    background-color: #25271c23;
+}
+
+#banner img{
+    width: 100%;
+    height: 100%;
+    /* oscurezco un poco la imagen */
+    filter: brightness(50%);
+    margin-top: 50px;
+}
+
+#banner .container_banner{
+    position: absolute;
+    top: 50px;
+    transform:  translateY(20%);
+    color: #fff;
+}
+
+#banner h2{
+    font-size: 1.75em;
+    color: #fff;
+    padding: 0.625em;
+}
+#banner p{
+    color: #fff;
+    padding: 1em;
+}
+
+#banner a{
+    padding: 0.625em;
+    display: block;
+    width: 8.25em;
+    text-decoration: none;
+    background-color: hsla(49, 88%, 62%, 0.457);
+    color: #fff;
+    border-radius: 0.5em;
+    margin-left: 1em;
+    text-align: center;
+}
+
+#banner .boton_contacto:hover{
+    background-color: #f3d448;
+    box-shadow: 0 0 5px #F3D548;
+    color: #25271C;
+}
+
+/* SERVICIOS */
+
+#servicios{
+    align-items: center;
+    text-align: center;
+    background-color: #25271c4c;
+    padding: 1.25em;
+}
+
+.service{
+    margin: 1.3em;
+}
+
+#servicios .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#servicios .service{
+    margin: 3em;
+    background-color: #f3d448;
+    border-radius: 10em;
+    width: 12.5em;
+    height: 12.5em;
+    text-align: center;
+    border: 5px solid #fff;
+}
+
+#servicios .service i{
+    font-size: 4.75em;
+    margin: 0.75em 0;
+    color: #25271C;
+    max-width: 17, 5em;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #25271C;
+    color: #fff;
+    margin-top: auto;
+    text-align: center;
+    align-items: center;
+}
+
+footer img{
+    width: 6.25em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1.5625em;
+}
+
+.copy{
+    font-size: 1.25em;
+}
+
+.social{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+.social a{
+    text-decoration: none;
+    color: #f3d448;
+    padding-left: 0.5em;
+}
+
+/* Diseño responsive */
+@media (min-width: 1024px){
+
+    /* menu */
+
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        background-color: #25271C;
+    }
     
-    color:black;
-    background-color: lightskyblue;
-}
+    .menu ul{
+        display: flex;
+    }
+    
+    .menu ul li a{
+        /* ponemos todo en mayuscula */
+        text-transform: uppercase;
+        color: #f3d448;
+        border-bottom: none;
+    }
 
-.texto{
-display:flex;
-size:90%
+    header label{
+        display: none;
+    }
+
+    .menu ul li a:hover{
+        background: #ffd519e1;
+        color: #25271C;
+        border-radius: 0.6em;
+    }
+
+    #selected{
+        background-color: hsla(49, 88%, 62%, 0.457);
+        border-radius: 0.6em;
+        color: #fff;
+        padding: 1em;
+    }
+
+    /* banner */
+
 }
