@@ -1,28 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+
+    <title>Formularios</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="/js/scripts.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/694751370e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="shortcut icon" href="img/Logo TG.png" type="image/x-icon">
+	<script src="js/scripts.js"></script>
 </head>
-<header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="Contactos.html">Contactos</a>
-        <a href="Formularios.html">Formularios</a>
-    </nav>
-<form action="">
-    
-</form>
 
-
-</header>
 <body>
     
+	<header>
+		<div class="container_menu"> 
+			<img class="logo_menu" src="img/Logo TG.png" alt="">
+
+            <!-- Boton para menu responsive -->
+            <input type="checkbox" id="menu_bar">
+            <label for="menu_bar" class="check_btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <!--  -->
+
+			<div class="menu">
+				<nav>
+					<ul>
+						<li><a href="index.html" id="selected">Inicio</a></li>
+						<li><a href="#">Servicios</a></li>
+						<li><a href="about.html">Sobre Nosotros</a></li>
+						<li><a href="Contactos.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+        
+	</header>
+
+	<main>
+		<section id="banner">
+			<img src="img/limpieza-sistema-800x533-OK.jpg" alt="img_banner">
+			<div class="container_banner">
+				<h2>Aprendé a reparar tu computadora</h2>
+				<p>Aprendé a reparar tu computadora</p>
+
+				<a href="#" class="boton_contacto">Contactanos</a>
+			</div>
+		</section>
+
+		<section id="servicios">
+			<h2>Nuestros servicios</h3>
+			<div class="container">
+				<div class="service">
+					<i class="fas fa-bars"></i>
+					<br><br>
+					<h3>Lorem ipsum</h3>
+				</div>
+				<div class="service">
+					<i class="fas fa-bars"></i>
+					<br><br>
+					<h3>Lorem ipsum</h3>
+				</div>
+				<div class="service">
+					<i class="fas fa-bars"></i>
+					<br><br>
+					<h3>Lorem ipsum</h3>
+				</div>
+				<div class="service">
+					<i class="fas fa-bars"></i>
+					<br><br>
+					<h3>Lorem ipsum</h3>
+				</div>
+			</div>
+		</section>
+	</main>
+
+    <footer>
+		<div class="container_footer">       
+			<div class="logo_footer">
+				<img src="img/Logo TG.png" alt="">
+			</div>
+			<div class="autor">
+				<small> Copyright &copy; 2022 <b> Thiago Gomez </b></small>
+			</div>
+			<div class="social">
+				<a class="icon-facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+				<a class="icon-twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+				<a class="icon-instagram" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+				<a class="icon-mail" href="#"><i class="fa-solid fa-envelope"></i></a>
+			</div>
+		</div>
+
+	</footer>
 </body>
+
 </html>
