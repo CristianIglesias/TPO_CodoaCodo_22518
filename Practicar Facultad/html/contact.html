@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Contacto</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/694751370e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="../css/contacStyles.css">
+	<link rel="shortcut icon" href="../img/logo_violeta.png" type="image/x-icon">
+
+</head>
+
+<body>
+    
+	<header>
+		<div class="container_menu"> 
+			<a href="#"  class="logo">
+				<img class="logo_menu" src="../img/logo_violeta.png" alt="">
+			</a>
+
+            <!-- Boton para menu responsive -->
+            <input type="checkbox" id="menu_bar">
+            <label for="menu_bar" class="check_btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <!--  -->
+
+			<div class="menu">
+				<nav>
+					<ul>
+						<li><a href="../index.html">Inicio</a></li>
+						<li><a href="#">Servicios</a></li>
+						<li><a href="about_us.html">Sobre Nosotros</a></li>
+						<li><a href="#" id="selected">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+        
+	</header>
+
+	<main class="container">
+		<h1 class="logo">Ponete en contacto con nosotros</h1>
+		<section class="contact">
+			<div class="contact-form">
+				<h3>Contactanos</h3>
+				<form action="">
+					<p>
+						<label for="nombre">Nombre completo</label>
+						<input type="text" name="nombre" id="nombre">
+					</p>
+					<br>
+					<p>
+						<label for="nombre">Mail</label>
+						<input type="email" name="email" id="email">
+					</p>
+					<br>
+					<p>
+						<label for="nombre">Número de teléfono</label>
+						<input type="tel" name="numero" id="numero">
+					</p>
+					<br>
+					<p class="un-col">
+						<label for="texto">Describi tu problema</label>
+						<textarea name="massege" id="massege" cols="10" rows="10"></textarea>
+					</p>
+					<br>
+					<p class="un-col">
+						<button type="submit">
+							Enviar
+						</button>
+					</p>
+				</form>
+			</div>
+
+			<div class="contact-info">
+				<ul>
+					<li><i class="fa-brands fa-facebook"></i>Argentina, Buenos Aires</li>
+					<li><i class="fa-brands fa-facebook"></i>(+54) 011 123 456 789</li>
+					<li><i class="fa-brands fa-facebook"></i>contacto@cristian</li>
+					<li><i class="fa-brands fa-facebook"></i>contacto@santiago</li>
+					<li><i class="fa-brands fa-facebook"></i>contacto@thiago</li>
+				</ul>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ad architecto et molestiae aliquam fugiat deleniti culpa possimus pariatur dolores.
+				</p>
+			</div>
+		</section>
+
+	</main>
+
+    <footer class="footer">
+		<div class="container">       
+			<div class="autor">
+				<small> Copyright &copy; 2022 <b> Codo a Codo </b></small>
+			</div>
+			<div class="social">
+				<a class="icon-facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+				<a class="icon-twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+				<a class="icon-instagram" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+				<a class="icon-mail" href="#"><i class="fa-solid fa-envelope"></i></a>
+			</div>
+		</div>
+
+	</footer>
+</body>
+
+</html>

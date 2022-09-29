@@ -9,7 +9,7 @@
 	<script src="https://kit.fontawesome.com/694751370e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="shortcut icon" href="img/Logo TG.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/logo_violeta.png" type="image/x-icon">
 
 </head>
 
@@ -17,7 +17,9 @@
     
 	<header>
 		<div class="container_menu"> 
-			<img class="logo_menu" src="img/Logo TG.png" alt="">
+			<a href="#"  class="logo">
+				<img class="logo_menu" src="img/logo_violeta.png" alt="">
+			</a>
 
             <!-- Boton para menu responsive -->
             <input type="checkbox" id="menu_bar">
@@ -31,8 +33,8 @@
 					<ul>
 						<li><a href="#" id="selected">Inicio</a></li>
 						<li><a href="#">Servicios</a></li>
-						<li><a href="#">Sobre Nosotros</a></li>
-						<li><a href="#">Contacto</a></li>
+						<li><a href="html/about_us.html">Sobre Nosotros</a></li>
+						<li><a href="html/contact.html">Contacto</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -41,51 +43,62 @@
         
 	</header>
 
-	<main>
-		<section id="banner">
-			<img src="img/limpieza-sistema-800x533-OK.jpg" alt="img_banner">
-			<div class="container_banner">
-				<h2>Aprendé a reparar tu computadora</h2>
-				<p>Aprendé a reparar tu computadora</p>
+	<main class="content">
 
-				<a href="#" class="boton_contacto">Contactanos</a>
+		<section class="banner">
+			<div class="banner-descripcion">
+				<div class="container">
+					<h1>Aprendé a reparar tu computadora</h1>
+					<h3>Aprendé a reparar tu computadora</h3>
+					<br>
+					<input type="button" value="Contactanos" class="boton-info">
+				</div>
 			</div>
 		</section>
 
-		<section id="servicios">
-			<h2>Nuestros servicios</h3>
+		<section class="services">
 			<div class="container">
-				<div class="service">
-					<i class="fas fa-bars"></i>
-					<br><br>
-					<h3>Lorem ipsum</h3>
+				<h1>Conocé los problemas mas comunes y como solucionarlos</h1>
+				<div class="grid">
+					<div class="service">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, necessitatibus?</p>
+						<img src="img/limpieza-sistema-800x533-OK.jpg" alt="">
+					</div>
+					<div class="service">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, necessitatibus?</p>
+						<img src="img/limpieza-sistema-800x533-OK.jpg" alt="">
+
+					</div>
+					<div class="service">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, necessitatibus?</p>
+						<img src="img/limpieza-sistema-800x533-OK.jpg" alt="">	
+					</div>
+					<div class="service">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, necessitatibus?</p>
+						<img src="img/limpieza-sistema-800x533-OK.jpg" alt="">
+					</div>
 				</div>
-				<div class="service">
-					<i class="fas fa-bars"></i>
-					<br><br>
-					<h3>Lorem ipsum</h3>
-				</div>
-				<div class="service">
-					<i class="fas fa-bars"></i>
-					<br><br>
-					<h3>Lorem ipsum</h3>
-				</div>
-				<div class="service">
-					<i class="fas fa-bars"></i>
-					<br><br>
-					<h3>Lorem ipsum</h3>
+			</div>
+
+		</section>
+
+		<section class="banner2">
+			<div class="banner2-info">
+				<div class="container">
+					<h1>Dejanos tu consulta</h1>
+					<h3>Lorem ipsum dolor sit amet consectetur.</h3>
+					<br>
+					<input type="button" value="Contactanos" class="boton-info">	
 				</div>
 			</div>
 		</section>
+
 	</main>
 
-    <footer>
-		<div class="container_footer">       
-			<div class="logo_footer">
-				<img src="img/Logo TG.png" alt="">
-			</div>
+    <footer class="footer">
+		<div class="container">       
 			<div class="autor">
-				<small> Copyright &copy; 2022 <b> Thiago Gomez </b></small>
+				<small> Copyright &copy; 2022 <b> Codo a Codo </b></small>
 			</div>
 			<div class="social">
 				<a class="icon-facebook" href="#"><i class="fa-brands fa-facebook"></i></a>

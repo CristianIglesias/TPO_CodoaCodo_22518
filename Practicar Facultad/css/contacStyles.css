@@ -1,0 +1,286 @@
+
+/* variables globales para colores del sitio */
+:root {
+    --color-tema: #0E0B16;
+    --color-principal: #A239CA;
+    --color-secundario: #4717F6;
+    --color-textos: #E7DFDD;
+}
+
+
+/*selector universal afecta a todos los elementos*/
+*{
+    font-family:Montserrat,  sans-serif;
+    -webkit-font-smoothing: antialiased;
+    /*le saca los margenes a todo, luego se lo doy por elemento*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-tema);
+    color: var(--color-textos);
+    font-family:Montserrat,  sans-serif;
+    padding: 0 1.5em;
+}
+
+/* HEADER y BARRA DE MENU*/
+
+header {
+    /* ancho de toda la pagina */
+    width: 100%;
+    height: 4.126em;
+    /* para que se mantenga por emcima de todo */
+    z-index: 100;
+    background-color: var(--color-tema);
+    color: var(--color-textos);
+    padding: 0.625em;
+}
+
+.logo_menu{
+    width: 50px;
+}
+
+.container_menu{
+    width: 98%;
+    margin: auto;
+}
+
+#menu_bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 1.75em;
+    margin: 0.375em 0;
+
+    /* cuando pasa el mause aparece la manito para apretar */
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 4.125em;
+    left: 0;
+    background-color: var(--color-tema);
+
+    /* aplico una transicion para que cuando aprete en las lineas se oculte o se muestre */
+    /* oculta el menu hasta que es activado */
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+header .container_menu{
+    display: table;
+}
+
+.menu ul li {
+    /* sacamos los puntos de las listas y demas */
+    list-style: none;
+}
+
+.menu ul li a{
+    /* saca las lineas de abajo de los links */
+    text-decoration: none;
+    color: var(--color-textos);
+    /* ponemos todo en mayuscula */
+    text-transform: uppercase;
+    display: block;
+    height: 3.125em;
+    padding: 1em;
+    border-bottom: 0.0625em solid var(--color-principal);
+}
+
+.menu ul li a:hover{
+    background: var(--color-principal);
+    color: var(--color-tema);
+}
+
+.check_btn {
+    color: var(--color-principal);
+}
+
+/* para que al cliquear el logo aparezca el menu desplegable. Cuando se activa el checkbox se activa el .menu */
+#menu_bar:checked~.menu{
+    transform: translateX(0%);
+}
+
+#selected{
+    color: var(--color-textos);
+}
+
+/* FORMULARIO */
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--color-secundario);
+    margin-bottom: 1em;
+}
+
+.contact {
+    box-shadow: 0 0 20px 0 var(--color-principal);
+}
+
+.contact > * {
+    padding: 1em;
+}
+
+.contact-form{
+    background-color: var(--color-tema);
+}
+.contact-info{
+    background-color: var(--color-secundario);
+}
+
+.contact-form form{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contact-form .un-col{
+    grid-column: 1/3;
+}
+
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button:hover{
+    
+}
+
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin: 0 0 1em;
+}
+
+.contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li{
+    padding: 0.3em;
+
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    padding: 0.7em;
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--color-principal);
+    outline: none;
+    color: var(--color-textos);
+}
+
+.contact-form form button{
+    background-color: var(--color-principal);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+@media(min-width: 780px) {
+    body{
+        padding: 0 4rem;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--color-tema);
+    color: var(--color-textos);
+    margin-top: auto;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1.5625em;
+}
+
+.copy{
+    font-size: 1.25em;
+}
+
+.social{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+.social a{
+    text-decoration: none;
+    color: var(--color-textos);
+    padding-left: 0.5em;
+}
+
+
+@media (min-width: 780px){
+
+    /* menu */
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        background-color: var(--color-tema);
+    }
+    
+    .menu ul{
+        display: flex;
+    }
+    
+    .menu ul li a{
+        /* ponemos todo en mayuscula */
+        text-transform: uppercase;
+        color: var(--color-principal);
+        border-bottom: none;
+    }
+
+    header label{
+        display: none;
+    }
+
+    .menu ul li a:hover{
+        background: var(--color-principal);
+        color: var(--color-textos);
+    }
+
+    #selected{
+       color: var(--color-textos);
+    }
+}
+
+@media(min-width: 1024px) {
+
+}
