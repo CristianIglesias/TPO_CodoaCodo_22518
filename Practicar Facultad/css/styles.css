@@ -40,7 +40,7 @@ header {
 }
 
 .container_menu{
-    width: 98%;
+    width: 95%;
     margin: auto;
 }
 
@@ -59,7 +59,7 @@ header label{
 
 .menu{
     position: absolute;
-    width: 100%;
+    width: 95%;
     height: 100vh;
     top: 4.125em;
     left: 0;
@@ -113,10 +113,9 @@ header .container_menu{
 .banner{
     height: 50vh;
     position: relative;
-    background: url(../img/cyber-gabc90b279_1920.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cyber-gabc90b279_1920.jpg);
     background-position: center;
     background-size: cover;
-
 }
 
 .banner-descripcion {
@@ -126,7 +125,7 @@ header .container_menu{
     transform: translateX(-50%) translateY(-50%);
     top: 40%;
     left: 50%;
-    width: 90%;
+    width: 95%;
     font-size: 1em;
     margin-top: 1.5em;
 }
@@ -137,25 +136,52 @@ header .container_menu{
     border: none;
     padding: 12px;
     font-size: 1em;
-    border-radius: 1em;
+    border-radius: 6px;
 }
 
-h1{
-background-color:#a95dc7;
-var(--color-principal);
+.boton-info:hover{
+    background-color: #4717F6;
+    box-shadow: 0 0 20px #4717F6;
+}
+ 
+.banner-descripcion h1{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-secundario);
+    padding: 0.3em;
+}
 
+.banner-descripcion p{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-secundario);
+    font-size: 1.5em;
+    padding: 0.3em;
 
+}
+
+.boton_texto{
+    background: transparent;
+    border: 2px solid #4717F6;
+    color: var(--color-secundario);
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.boton_texto:hover {
+    background-color: #4717F6;
+    color: var(--color-secundario);
 }
 
 .services h1{
     text-align: center;
-    color: #4717F6;
+    color:var(--color-secundario);
+    background-color:#a95dc7ac;
+    border-radius: 6px;
 }
 
 .services p{
     text-align: center;
     color: var(--color-secundario);
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .services {
@@ -174,35 +200,54 @@ var(--color-principal);
 
 .services .container {
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 50px;
+}
+
+.service{
+    align-items: center;
+    text-align: center;
+}
+
+.service .boton_texto{
+    align-items: center;
+    text-align: center;
+    margin: 10px;
 }
 
 .banner2{
     height: 50vh;
     color: var(--color-secundario);
     position: relative;
-    background: url(../img/cyber-gabc90b279_1920.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cyber-gabc90b279_1920.jpg);
     background-position: right;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .banner2 h1{
-    color: #4717F6;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-secundario);
 }
 
-.banner2 h3{
-    color: var(--color-tema);
+.banner2 p{
+    font-size: 1.5em;
+    padding: 0.1em;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-secundario);
 }
 
 .banner2-info{
     position: absolute;
-    width: 80%;
+    width: 95%;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
 }
+
+/* FOOTER */
 
 footer{
     background-color: var(--color-tema);
@@ -221,17 +266,19 @@ footer .container{
 }
 
 .copy{
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 .social{
     width: 100%;
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
     margin-top: 0.5em;
 }
 
 .social a{
+    text-align: center;
+
     text-decoration: none;
     color: var(--color-principal);
     padding-left: 0.5em;
@@ -282,6 +329,7 @@ footer .container{
     .menu ul li a:hover{
         background: var(--color-principal);
         color: var(--color-secundario);
+        border-radius: 10px;
     }
 
     #selected{
@@ -297,7 +345,7 @@ footer .container{
  
     }
  
-     .services .container{
-         grid-template-columns: (4,1fr);
+    .services .container{
+        grid-template-columns: (4,1fr);
     }
 }

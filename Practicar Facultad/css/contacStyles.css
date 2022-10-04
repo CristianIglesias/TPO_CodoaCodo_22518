@@ -1,16 +1,14 @@
-
-/* variables globales para colores del sitio */
 :root {
     --color-tema: #0E0B16;
     --color-principal: #A239CA;
-    --color-secundario: #4717F6;
-    --color-textos: #E7DFDD;
+    --color-secundario: #E7DFDD;
+    --color-principal2:#a95dc7;
 }
 
 
 /*selector universal afecta a todos los elementos*/
 *{
-    font-family:Montserrat,  sans-serif;
+    font-family: Montserrat, sans-serif;
     -webkit-font-smoothing: antialiased;
     /*le saca los margenes a todo, luego se lo doy por elemento*/
     margin: 0;
@@ -18,14 +16,11 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: var(--color-tema);
-    color: var(--color-textos);
-    font-family:Montserrat,  sans-serif;
-    padding: 0 1.5em;
-}
-
 /* HEADER y BARRA DE MENU*/
+.container{
+    width: 100%;
+    margin: auto;
+}
 
 header {
     /* ancho de toda la pagina */
@@ -34,7 +29,7 @@ header {
     /* para que se mantenga por emcima de todo */
     z-index: 100;
     background-color: var(--color-tema);
-    color: var(--color-textos);
+    color: var(--color-secundario);
     padding: 0.625em;
 }
 
@@ -43,7 +38,7 @@ header {
 }
 
 .container_menu{
-    width: 98%;
+    width: 95%;
     margin: auto;
 }
 
@@ -62,7 +57,7 @@ header label{
 
 .menu{
     position: absolute;
-    width: 100%;
+    width: 95%;
     height: 100vh;
     top: 4.125em;
     left: 0;
@@ -86,7 +81,7 @@ header .container_menu{
 .menu ul li a{
     /* saca las lineas de abajo de los links */
     text-decoration: none;
-    color: var(--color-textos);
+    color: var(--color-secundario);
     /* ponemos todo en mayuscula */
     text-transform: uppercase;
     display: block;
@@ -110,7 +105,7 @@ header .container_menu{
 }
 
 #selected{
-    color: var(--color-textos);
+    color: var(--color-secundario);
 }
 
 /* FORMULARIO */
@@ -125,7 +120,7 @@ header .container_menu{
 h1 {
     text-align: center;
     font-size: 2em;
-    color: var(--color-secundario);
+    color: var(--color-principal);
     margin-bottom: 1em;
 }
 
@@ -140,13 +135,22 @@ h1 {
 .contact-form{
     background-color: var(--color-tema);
 }
+
 .contact-info{
-    background-color: var(--color-secundario);
+    color: var(--color-secundario);
+    align-items: center;
+    padding-top: 5em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/limpieza-sistema-800x533-OK.jpg);
+    background-size: cover;
 }
 
 .contact-form form{
-  display: grid;
-  grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contact-form form label{
+    color: var(--color-secundario);
 }
 
 .contact-form .un-col{
@@ -156,10 +160,6 @@ h1 {
 .contact-form form p{
     margin: 0;
     padding: 1em;
-}
-
-.contact-form form button:hover{
-    
 }
 
 .contact-info ul,
@@ -175,44 +175,37 @@ h1 {
 
 .contact-info ul li{
     padding: 0.3em;
-
 }
 
 .contact-form form button,
 .contact-form form input,
 .contact-form form textarea{
+    color: var(--color-secundario);
     padding: 0.7em;
     width: 100%;
     border: none;
     background: none;
     border-bottom: 1px solid var(--color-principal);
     outline: none;
-    color: var(--color-textos);
 }
 
 .contact-form form button{
     background-color: var(--color-principal);
-    border: 0;
+    border-radius: 6px;
     text-transform: uppercase;
     padding: 1em;
 }
-
-@media(min-width: 780px) {
-    body{
-        padding: 0 4rem;
-    }
-
-    .contact {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
+.contact-form form button:hover{
+    box-shadow: 0 0 20px var(--color-principal);
 }
+
 
 /* FOOTER */
 
+
 footer{
     background-color: var(--color-tema);
-    color: var(--color-textos);
+    color: var(--color-secundario);
     margin-top: auto;
     text-align: center;
     align-items: center;
@@ -227,24 +220,34 @@ footer .container{
 }
 
 .copy{
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 .social{
     width: 100%;
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
     margin-top: 0.5em;
-}
+}   
 
 .social a{
+    text-align: center;
+
     text-decoration: none;
-    color: var(--color-textos);
+    color: var(--color-principal);
     padding-left: 0.5em;
 }
 
 
 @media (min-width: 780px){
+    body{
+        padding: 0 4rem;
+    }
+    
+    .contact {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
 
     /* menu */
     .menu{
@@ -273,14 +276,56 @@ footer .container{
 
     .menu ul li a:hover{
         background: var(--color-principal);
-        color: var(--color-textos);
+        color: var(--color-secundario);
+        border-radius: 10px;
     }
 
     #selected{
-       color: var(--color-textos);
+       color: var(--color-secundario);
     }
 }
 
 @media(min-width: 1024px) {
+   /* menu */
+   .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        float: right;
+        background-color: var(--color-tema);
+    }
 
+    .menu ul{
+        display: flex;
+    }
+
+    .menu ul li a{
+        /* ponemos todo en mayuscula */
+        text-transform: uppercase;
+        color: var(--color-principal);
+        border-bottom: none;
+    }
+
+    header label{
+        display: none;
+    }
+
+    .menu ul li a:hover{
+        background: var(--color-principal);
+        color: var(--color-secundario);
+        border-radius: 10px;
+    }
+
+    #selected{
+        color: var(--color-secundario);
+    }
+
+    body{
+        padding: 0 4rem;
+    }
+    
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
