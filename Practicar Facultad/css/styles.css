@@ -4,6 +4,7 @@
     --color-tema: #0E0B16;
     --color-principal: #A239CA;
     --color-secundario: #E7DFDD;
+    --color-principal2:#a95dc7;
 }
 
 
@@ -125,7 +126,7 @@ header .container_menu{
     transform: translateX(-50%) translateY(-50%);
     top: 40%;
     left: 50%;
-    width: 100%;
+    width: 90%;
     font-size: 1em;
     margin-top: 1.5em;
 }
@@ -137,6 +138,13 @@ header .container_menu{
     padding: 12px;
     font-size: 1em;
     border-radius: 1em;
+}
+
+h1{
+background-color:#a95dc7;
+var(--color-principal);
+
+
 }
 
 .services h1{
@@ -189,7 +197,7 @@ header .container_menu{
 
 .banner2-info{
     position: absolute;
-    width: 100%;
+    width: 80%;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
