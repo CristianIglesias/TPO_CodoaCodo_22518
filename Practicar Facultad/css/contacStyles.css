@@ -8,19 +8,13 @@
 
 /*selector universal afecta a todos los elementos*/
 *{
-    font-family: Montserrat, sans-serif;
-    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto Flex', sans-serif;    -webkit-font-smoothing: antialiased;
     /*le saca los margenes a todo, luego se lo doy por elemento*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 /* HEADER y BARRA DE MENU*/
-.container{
-    width: 100%;
-    margin: auto;
-}
 
 header {
     /* ancho de toda la pagina */
@@ -38,7 +32,7 @@ header {
 }
 
 .container_menu{
-    width: 95%;
+    width: 100%;
     margin: auto;
 }
 
@@ -111,21 +105,25 @@ header .container_menu{
 /* FORMULARIO */
 
 .container{
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/limpieza-sistema-800x533-OK.jpg);
+    background-size: cover;
 }
 
 h1 {
     text-align: center;
     font-size: 2em;
-    color: var(--color-principal);
+    color: var(--color-secundario);
     margin-bottom: 1em;
 }
 
 .contact {
-    box-shadow: 0 0 20px 0 var(--color-principal);
+    /* box-shadow: 0 0 20px 0 var(--color-principal); */
+    background: transparent;
+    width: auto;
 }
 
 .contact > * {
@@ -136,12 +134,18 @@ h1 {
     background-color: var(--color-tema);
 }
 
+.contact-form h3{
+    color: var(--color-principal);
+    padding: 0.7em;
+}
+
 .contact-info{
     color: var(--color-secundario);
     align-items: center;
     padding-top: 5em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/limpieza-sistema-800x533-OK.jpg);
-    background-size: cover;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/limpieza-sistema-800x533-OK.jpg); */
+    /* background-size: cover; */
+    background: transparent;
 }
 
 .contact-form form{

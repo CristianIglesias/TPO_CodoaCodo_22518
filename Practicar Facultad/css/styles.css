@@ -10,8 +10,7 @@
 
 /*selector universal afecta a todos los elementos*/
 *{
-    font-family: Montserrat, sans-serif;
-    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto Flex', sans-serif;    -webkit-font-smoothing: antialiased;
     /*le saca los margenes a todo, luego se lo doy por elemento*/
     margin: 0;
     padding: 0;
@@ -20,8 +19,8 @@
 
 /* HEADER y BARRA DE MENU*/
 .container{
-     width: 100%;
-     margin: auto;
+    width: 100%;
+    margin: auto;
 }
 
 header {
@@ -161,8 +160,9 @@ header .container_menu{
 .boton_texto{
     background: transparent;
     border: 2px solid #4717F6;
-    color: var(--color-secundario);
+    color: var(--color-tema);
     padding: 12px;
+    text-transform: uppercase;
     border-radius: 6px;
 }
 
@@ -173,29 +173,24 @@ header .container_menu{
 
 .services h1{
     text-align: center;
-    color:var(--color-secundario);
-    background-color:#a95dc7ac;
+    color: var(--color-tema);
     border-radius: 6px;
 }
 
-.services p{
-    text-align: center;
-    color: var(--color-secundario);
+.services p, h3{
+    text-align: left;
+    color: var(--color-tema);
     margin-bottom: 10px;
 }
 
-.services {
-    margin: 20px;
-    background-color: var(--color-tema);
+.services{
     color: var(--color-secundario);
     padding: 30px;
-    align-items: center;
 }
 
 .grid img{
     align-items: center;
     width: 100%;
-    border-radius: 1em;
 }
 
 .services .container {
@@ -204,14 +199,9 @@ header .container_menu{
 }
 
 .service{
-    align-items: center;
-    text-align: center;
-}
-
-.service .boton_texto{
-    align-items: center;
-    text-align: center;
-    margin: 10px;
+    align-items: left;
+    text-align: left;
+    margin: 1em;
 }
 
 .banner2{
