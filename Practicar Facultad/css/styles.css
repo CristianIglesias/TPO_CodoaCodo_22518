@@ -129,17 +129,19 @@ header .container_menu{
     margin-top: 1.5em;
 }
 
-.boton-info{
+.banner-descripcion button,
+.banner2 button{
     background-color: #4717F6;
-    color: var(--color-secundario);
     border: none;
+    color: var(--color-secundario);
     padding: 12px;
-    font-size: 1em;
+    text-transform: uppercase;
     border-radius: 6px;
 }
 
-.boton-info:hover{
-    background-color: #4717F6;
+.banner-descripcion button:hover,
+.banner2 button:hover{
+    background-color:transparent;
     box-shadow: 0 0 20px #4717F6;
 }
  
@@ -169,6 +171,10 @@ header .container_menu{
 .boton_texto:hover {
     background-color: #4717F6;
     color: var(--color-secundario);
+}
+
+.services img:hover{
+    width: 300px;
 }
 
 .services h1{
