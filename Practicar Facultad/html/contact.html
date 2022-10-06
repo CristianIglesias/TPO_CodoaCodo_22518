@@ -35,7 +35,7 @@
 					<ul>
 						<li><a href="../index.html">Inicio</a></li>
 						<li><a href="#">Servicios</a></li>
-						<li><a href="about_us.html">Sobre Nosotros</a></li>
+						<li><a href="aboutUs.html">Sobre Nosotros</a></li>
 						<li><a href="#" id="selected">Contacto</a></li>
 					</ul>
 				</nav>
@@ -51,26 +51,47 @@
 			<div class="contact-form">
 				<h3>Contactanos</h3>
 				<form action="">
-					<p>
+					<p class="un-col">
 						<label for="nombre">Nombre completo</label>
 						<input type="text" name="nombre" id="nombre">
 					</p>
-					<br>
-					<p>
+					<p class="un-col">
 						<label for="nombre">Mail</label>
 						<input type="email" name="email" id="email">
 					</p>
-					<br>
-					<p>
+					<p class="un-col">
 						<label for="nombre">Número de teléfono</label>
 						<input type="tel" name="numero" id="numero">
 					</p>
-					<br>
+					<div class="media-col">
+						<h3>Sistema operativo</h2>
+							<input type="checkbox" name="checkbox">
+							<label for="checkbox1">Windows</label>
+	
+							<input type="checkbox" name="checkbox">
+							<label for="checkbox1">Linux</label>
+	
+							<input type="checkbox" name="checkbox">
+							<label for="checkbox1">IOS</label>
+					</div>
+					<div class="media-col">
+						<h3>Contanos que esta pasando</h2>
+						<input type="checkbox" name="checkbox">
+						<label for="checkbox1">checkbox1</label>
+
+						<input type="checkbox" name="checkbox">
+						<label for="checkbox1">checkbox1</label>
+
+						<input type="checkbox" name="checkbox">
+						<label for="checkbox1">checkbox1</label>
+
+						<input type="checkbox" name="checkbox">
+						<label for="checkbox1">checkbox1</label>
+					</div>
 					<p class="un-col">
-						<label for="texto">Describi tu problema</label>
+						<label for="texto">Describí tu problema</label>
 						<textarea name="massege" id="massege" cols="10" rows="10"></textarea>
 					</p>
-					<br>
 					<p class="un-col">
 						<button type="submit">
 							Enviar
