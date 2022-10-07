@@ -24,6 +24,7 @@
 }
 
 header {
+    position: sticky;
     /* ancho de toda la pagina */
     width: 100%;
     height: 4.126em;
