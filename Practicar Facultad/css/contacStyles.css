@@ -14,9 +14,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* HEADER y BARRA DE MENU*/
 
+/* HEADER y BARRA DE MENU*/
 header {
+    position: sticky;
     /* ancho de toda la pagina */
     width: 100%;
     height: 4.126em;
@@ -266,9 +267,9 @@ footer .container{
 
 
 @media (min-width: 780px){
-    body{
+    /*body{
         padding: 0 4rem;
-    }
+    }*/
     
     .contact {
         display: grid;
@@ -346,9 +347,9 @@ footer .container{
         color: var(--color-secundario);
     }
 
-    body{
+    /*body{
         padding: 0 4rem;
-    }
+    }*/
     
     .contact {
         display: grid;
