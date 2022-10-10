@@ -15,9 +15,18 @@
     box-sizing: border-box;
 }
 
+body{
+    justify-content: center;
+    align-items: center;
+}
+
 /* HEADER y BARRA DE MENU*/
+.container{
+    width: 100%;
+    margin: auto;
+}
+
 header {
-    position: sticky;
     /* ancho de toda la pagina */
     width: 100%;
     height: 4.126em;
@@ -33,7 +42,7 @@ header {
 }
 
 .container_menu{
-    width: 100%;
+    width: 95%;
     margin: auto;
 }
 

@@ -49,28 +49,47 @@
 	</header>
 
 	<main class="content">
-		<section class="seccion_articulos">
-			<article>
-				<h2>¿Quienes somos?</h2>
-				<p>Somos un grupo de jovenes desarroladores que se juntaron al cursar el programa <strong>"Codo a Codo"</strong> de la <strong>"Agencia de Aprendizaje a lo Largo de la Vida"</strong> del <strong>Gobierno de la Ciudad Autonoma de Buenos Aires.</strong></p>
-				<p>Cursando en la comisión 22518 de <strong>Desarrollo Web Full Stack Python</strong>, se nos ofrecio la posibilidad de iniciar con este proyecto como un trabajo practico integrador de la primera etapa del curso, utilizando contenido HyperText Markup Language, Cascading Style Sheets y el lenguaje de programación JavaScript.</p>
-			</article>
+		<div class="panel">
+			<button class="acordeon">¿Quienes somos?</button>
+			<div class="articulo">
+				<p>Somos un grupo de jovenes desarroladores que se juntaron al cursar el programa <strong>"Codo a
+					Codo"</strong> de la <strong>"Agencia de Aprendizaje a lo Largo de la Vida"</strong> del
+				<strong>Gobierno de la Ciudad Autonoma de Buenos Aires.</strong>Cursando en la comisión 22518 de
+				<strong>Desarrollo Web Full Stack Python</strong>, se nos ofrecio la posibilidad de iniciar con este
+				proyecto como un trabajo practico integrador de la primera etapa del curso, utilizando contenido
+				HyperText Markup Language, Cascading Style Sheets y el lenguaje de programación JavaScript.</p>
+			</div>
+		</div>
+		<div class="panel">
 
-			<article>
-				<h2>Nuestra Visión</h2>
-				<p>Administrar una base de conocimiento por la cual se encuentren disponibles un gran catálogo de soluciones posibles a los problemas de informatica casera que puera tener cualqueir usuario promedio.</p>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed autem repellendus maiores voluptas alias porro?</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis cupiditate in eius aut modi deserunt, ab neque facilis, voluptates fugiat, ut veritatis adipisci dolorem.</p>
-			</article>
+			<button class="acordeon">Nuestra Visión</button>
+			<div class="articulo">
+				<p>Administrar una base de conocimiento por la cual se encuentren disponibles un gran catálogo de
+					soluciones posibles a los problemas de informatica casera que puera tener cualqueir usuario
+					promedio.</p>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed autem repellendus maiores voluptas
+					alias porro?</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis cupiditate in eius aut modi
+					deserunt, ab neque facilis, voluptates fugiat, ut veritatis adipisci dolorem.</p>
+			</div>
+		</div>
 
-			<article>
-				<h2>Nuestra Misión</h2>
-				<p>Facilitar el acceso a soluciones simples para que cualquier persona con poco conocimiento sobre informatica en general, pueda realizar un autodianostico de las posibles fallas de sus dispositivos.</p>
-				<p>Habiendo obtenido un diagnostico del inconveniente presentado, poder proponerle al usuario una serie de herramientas con las que pueda llegar a solucionarlo.</p>
-				<p>Si el usuario no lograra dar con una solución a su inconveniente, facilitarle el contacto de un operador con el cual pueda ver la incidencia</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi minima vel accusantium quo at officia deserunt voluptas delectus error provident.</p>
-			</article>
-		</section>
+		<div class="panel">
+
+			<button class="acordeon">Nuestra Misión</button>
+			<div class="articulo">
+				<p>Facilitar el acceso a soluciones simples para que cualquier persona con poco conocimiento sobre
+					informatica en general, pueda realizar un autodianostico de las posibles fallas de sus dispositivos.
+				</p>
+				<p>Habiendo obtenido un diagnostico del inconveniente presentado, poder proponerle al usuario una serie
+					de herramientas con las que pueda llegar a solucionarlo.</p>
+				<p>Si el usuario no lograra dar con una solución a su inconveniente, facilitarle el contacto de un
+					operador con el cual pueda ver la incidencia</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi minima vel accusantium quo at
+					officia deserunt voluptas delectus error provident.</p>
+			</div>
+		</div>
+
 		<!-- Inicio del cuerpo principal del slider.-->
 		<section class="slider">
 			<div class="slider_container">
@@ -100,7 +119,7 @@
 						</p>
 					</div>
 					<figure class="slider_picture">
-						<img src="../img/AboutUs/Slider/thiagoGomez.png" class="slider_img">
+						<img src="../img/AboutUs/Slider/perfil_thiago.jpeg" class="slider_img">
 					</figure>
 				</section>
 				<!---->
@@ -121,24 +140,42 @@
 			</div>
 			<!-- Fin del cuerpo principal del slider.-->
 		</section>
-		<script src="../js/aboutUs/slider.js"></script>
 
 	</main>
 
-    <footer class="footer">
-		<div class="container">       
+	<footer class="footer">
+		<div class="container">
 			<div class="autor">
 				<small> Copyright &copy; 2022 <b> Codo a Codo </b></small>
 			</div>
 			<div class="social">
 				<a class="icon-facebook" href=https://es-la.facebook.com><i class="fa-brands fa-facebook"></i></a>
 				<a class="icon-twitter" href=https://twitter.com/?lang><i class="fa-brands fa-twitter"></i></a>
-				<a class="icon-instagram" href=https://www.instagram.com><i class="fa-brands fa-square-instagram"></i></a>
+				<a class="icon-instagram" href=https://www.instagram.com><i
+						class="fa-brands fa-square-instagram"></i></a>
 				<a class="icon-mail" href="#"><i class="fa-solid fa-envelope"></i></a>
 			</div>
 		</div>
 
 	</footer>
+	<script src="../js/aboutUs/slider.js"></script>
+
+	<script>
+
+		let elementsAcordeon = document.getElementsByClassName("acordeon")
+
+		for(let i = 0; i < elementsAcordeon.length; i ++){
+			elementsAcordeon[i].addEventListener("click", function(){
+				this.classList.toggle("active");
+				let articulo = this.nextElementSibling;
+				if(articulo.style.display == "block"){
+					articulo.style.display = "none"
+				}else{
+					articulo.style.display = "block";
+				}
+			})
+		}
+	</script>
 </body>
 
 </html>
