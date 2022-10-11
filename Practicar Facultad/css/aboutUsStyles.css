@@ -151,8 +151,8 @@ header .container_menu{
 
 /********************************************** Slider ************************************************/
 .slider{
-    margin-top: 20px;
-    height: 300px;
+    padding: 0px 0px 10px 0;
+    /*height: 300px;*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/limpieza-sistema-800x533-OK.jpg);
     background-size: cover;
 }
@@ -166,6 +166,7 @@ header .container_menu{
     min-height: 35vh;
     max-width: 1200px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .slider_body{
@@ -192,8 +193,7 @@ header .container_menu{
 }
 
 .slider_img{
-    margin-top: 50px;
-    margin-left: 200px;
+    margin: 0 auto;
     width: 180px;
     height: 180px;
     border-radius: 50%;
