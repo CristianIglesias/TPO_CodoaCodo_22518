@@ -180,20 +180,30 @@ h1 {
     display: none;
 }
 
-.contact-form .media-col label{
+/* .contact-form .media-col label{
     background: rgba(0, 0, 0, 0.2);
-    padding: 5px 15px 5px 30px;
-    cursor: pointer;
+    padding: 10px;
     margin: 1em;
-}
-
-.contact-form .media-col label:hover{
-    background: var(--color-tema);
-}
+    border-radius: 6px;
+} */
 
 .contact-form form p{
     margin: 0;
     padding: 1em;
+}
+
+select {
+    background: rgba(0, 0, 0, 0.3);
+    width: 250px;
+    color: var(--color-secundario);
+    padding: 10px;
+    margin: 1em;
+    border-radius: 6px;
+    border: none;
+}
+
+option{
+    color: var(--color-tema);
 }
 
 .contact-info ul,
@@ -238,7 +248,6 @@ h1 {
 
 /* FOOTER */
 
-
 footer{
     background-color: var(--color-tema);
     color: var(--color-secundario);
@@ -274,12 +283,8 @@ footer .container{
     padding-left: 0.5em;
 }
 
-
 @media (min-width: 780px){
-    /*body{
-        padding: 0 4rem;
-    }*/
-    
+
     .contact {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -321,47 +326,4 @@ footer .container{
     }
 }
 
-@media(min-width: 1024px) {
-   /* menu */
-   .menu{
-        position: static;
-        width: auto;
-        height: auto;
-        float: right;
-        background-color: var(--color-tema);
-    }
 
-    .menu ul{
-        display: flex;
-    }
-
-    .menu ul li a{
-        /* ponemos todo en mayuscula */
-        text-transform: uppercase;
-        color: var(--color-principal);
-        border-bottom: none;
-    }
-
-    header label{
-        display: none;
-    }
-
-    .menu ul li a:hover{
-        background: var(--color-principal);
-        color: var(--color-secundario);
-        border-radius: 10px;
-    }
-
-    #selected{
-        color: var(--color-secundario);
-    }
-
-    /*body{
-        padding: 0 4rem;
-    }*/
-    
-    .contact {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
