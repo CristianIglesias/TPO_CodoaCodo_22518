@@ -1,7 +1,7 @@
 :root {
     --color-tema: #0E0B16;
     --color-principal: #A239CA;
-    --color-secundario: #E7DFDD;
+    --color-secundario: #ffffffb8;
     --color-principal2:#a95dc7;
 }
 
@@ -190,6 +190,7 @@ header .container_menu{
 .services{
     color: var(--color-secundario);
     padding: 30px;
+    background-color:var(--color-secundario);
 }
 
 .grid img{
