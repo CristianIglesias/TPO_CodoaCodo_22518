@@ -200,7 +200,7 @@ header .container_menu{
 
 .services .container {
     display: grid;
-    grid-gap: 50px;
+    grid-gap: 20px;
 }
 
 .service{
