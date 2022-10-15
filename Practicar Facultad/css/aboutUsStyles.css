@@ -115,6 +115,15 @@ header .container_menu{
 
 /* ARTICULOS */
 
+h2 {
+    text-align: center;
+    align-items: center;
+    font-size: 2em;
+    color: var(--color-tema);
+    margin: 1em;
+    width: 100%;
+}
+
 .acordeon {
     color: var(--color-principal);
     cursor: pointer;
@@ -136,7 +145,6 @@ header .container_menu{
 .panel{
     padding: 10px;
     width: 100%;
-    height: 100%;
 }
 
 .articulo {
