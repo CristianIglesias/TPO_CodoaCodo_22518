@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Tutoriales ver 1 bastante mala...</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://kit.fontawesome.com/694751370e.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="/TPO_CodoaCodo_22518/Practicar Facultad/css/styles.css">
-        <link rel="shortcut icon" href="/TPO_CodoaCodo_22518/Practicar Facultad/img/logo_violeta.png" type="image/x-icon">
-        <script src="/TPO_CodoaCodo_22518/Practicar Facultad/js/contact.js"></script>
-		<script  src="/TPO_CodoaCodo_22518/Practicar Facultad/js/headers.js"></script>
-    </head>
+	<head>
+
+		<title>Tutoriales - ver 1</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/694751370e.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<link rel="shortcut icon" href="img/logo_violeta.png" type="image/x-icon">
+		
+		<script src="/js/tutoriales.js"></script>
+	</head>
+	
 <body>
 	<div id="header"></div>	
+
+	<!--<header>
+		<div class="container_menu"> 
+			<a href="index.html"  class="logo">
+				<img class="logo_menu" src="../img/logo_violeta.png" alt="">
+			</a>
+			<input type="checkbox" id="menu_bar">
+			<label for="menu_bar" class="check_btn">
+				<i class="fas fa-bars"></i>
+			</label>
+		   
+		
+			<div class="menu">
+				<nav>
+					<ul>
+						<li><a href="../index.html">Inicio</a></li>
+						<li><a href="../html/tutorialesv1.html">Tutoriales</a></li>
+						<li><a href="../html/aboutUs.html">Sobre Nosotros</a></li>
+						<li><a href="../html/contact.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+		</header>
+
+	-->
+
 	<main class="content">
 
 		<section class="banner">
@@ -37,21 +67,21 @@
 <!--
     El plan era otro. Quizas podría poner algo para que al clickear dentro del div - se ponga el video en pantalla completa    
 -->
-					<div class="service">
+					<div class="service" id="Equipolento">
                         <iframe width="250" height="150" src="https://www.youtube.com/embed/kTEAlfONnrk" title="Cómo FORMATEAR tu PC con WINDOWS 10!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						<h3>Equipo lento</h3>
 						<p>en ocaciones, el disco se daña y trae otros problemas.</p>
                         <!--<button class="boton_texto" type="submit">Optimizá tu pc</button>-->
 					</div>
 
-					<div class="service">
+					<div class="service"id="Drivers">
                         <iframe width="250" height="150" src="https://www.youtube.com/embed/sU-i8NNpuF4" title="Cómo ACTUALIZAR DRIVERS o Controladores sin Programas en Windows 10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						<h3>Drivers</h3>
 						<p>Tener los drivers actualizados siempre está bien.</p>
 						<!--<button class="boton_texto" type="submit">Optimizá tu pc</button>-->
 					</div>
                   
-					<div class="service">
+					<div class="service" id="Rendimiento">
 						<iframe width="250" height="150" src="https://www.youtube.com/embed/xj-RrACpWZk" title="EL MEJOR PROGRAMA PARA VERIFICAR LA SALUD DE TU DISCO DURO 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						<h3>Rendimiento</h3>
 						<p>Estas buscando mejorar el rendimiento de tu equipo, te dejamos algunos tips para optimizarlo.</p>
@@ -59,8 +89,8 @@
                     </div>
                    
 
-					<div class="service">
-						<iframe width="250" height="150" src="https://www.youtube.com/embed/uFM0N8zhpX4" title="Como LIMPIAR PC GAMING / PROFESIONAL Paso a Paso Detalladamente" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="service" id="Mantenimiento">
+						<iframe width="250" height="150" src="https://www.youtube.com/embed/uFM0N8zhpX4" title="Como LIMPIAR PC PROFESIONAL Paso a Paso Detalladamente" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						<h3>Como Hacer Mantenimiento al equipo!</h3>
 						<p>El Ideal es limpiarla una vez cada 6 meses. Hace cuanto no limpias la tuya?</p>
 					<!--	<button class="boton_texto" type="submit">Paso a paso</button>-->
@@ -92,7 +122,9 @@
 
 	</main>
 
-    <footer class="footer">
+
+	<div id="footer"></div>
+  <!--  <footer class="footer">
 		<div class="container">       
 			<div class="autor">
 				<small> Copyright &copy; 2022 <b> Codo a Codo </b></small>
@@ -105,7 +137,8 @@
 			</div>
 		</div>
 	</footer>	
-
+</div>
+-->
 </body>
-
+<script  src="/js/headers.js"></script>
 </html> 
