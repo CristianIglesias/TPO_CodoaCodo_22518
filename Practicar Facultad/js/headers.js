@@ -24,7 +24,7 @@ if(document.title==='Home'){
 } else if (document.title==='Tutoriales'){
     headersito=`<header>
     <div class="container_menu"> 
-        <a href="index.html"  class="logo">
+        <a href="../index.html"  class="logo">
             <img class="logo_menu" src="../img/logo_violeta.png" alt="">
         </a>
         <input type="checkbox" id="menu_bar">
@@ -46,7 +46,7 @@ if(document.title==='Home'){
 } else if (document.title==='Sobre Nosotros'){
     headersito=`<header>
     <div class="container_menu"> 
-        <a href="index.html"  class="logo">
+        <a href="../index.html"  class="logo">
             <img class="logo_menu" src="../img/logo_violeta.png" alt="">
         </a>
         <input type="checkbox" id="menu_bar">
@@ -68,7 +68,7 @@ if(document.title==='Home'){
 } else if (document.title==='Contacto'){
     headersito=`<header>
     <div class="container_menu"> 
-        <a href="index.html"  class="logo">
+        <a href="../index.html"  class="logo">
             <img class="logo_menu" src="../img/logo_violeta.png" alt="">
         </a>
         <input type="checkbox" id="menu_bar">
