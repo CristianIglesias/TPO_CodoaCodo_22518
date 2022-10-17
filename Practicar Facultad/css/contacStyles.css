@@ -180,13 +180,6 @@ h1 {
     display: none;
 }
 
-/* .contact-form .media-col label{
-    background: rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    margin: 1em;
-    border-radius: 6px;
-} */
-
 .contact-form form p{
     margin: 0;
     padding: 1em;
@@ -273,7 +266,7 @@ footer .container{
     text-align: center;
     font-size: 1em;
     margin-top: 0.5em;
-}   
+}
 
 .social a{
     text-align: center;

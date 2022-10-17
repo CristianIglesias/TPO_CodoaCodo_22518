@@ -21,34 +21,60 @@
 
 <body>
 	<div id="header"></div>
-	<!-- <header>
-		<div class="container_menu">
-			<a href="#" class="logo">
-				<img class="logo_menu" src="../img/logo_violeta.png" alt="">
-			</a>
-
-			<input type="checkbox" id="menu_bar">
-			<label for="menu_bar" class="check_btn">
-				<i class="fas fa-bars"></i>
-			</label>
-
-			<div class="menu">
-				<nav>
-					<ul>
-						<li><a href="../index.html">Inicio</a></li>
-						<li><a href="../html/tutorialesv1.html">Tutoriales</a></li>
-						<li><a href="../html/aboutUs.html" id="selected">Sobre Nosotros</a></li>
-						<li><a href="../html/contact.html">Contacto</a></li>
-					</ul>
-				</nav>
-			</div>
-
-		</div>
-
-	</header> -->
 
 	<main class="content">
-		<h2>Conocenos más</h2>
+		<!-- Inicio del cuerpo principal del slider.-->
+		<section class="slider">
+			<div class="slider_container">
+				<img src="../img/AboutUs/Slider/flechaIzquierda.svg" class="slider_arrow" id="before">
+				<!-- Inicio sección de información de la primera pagina-->
+
+				<section class="slider_body slider_body--show" data-id="1">
+					<div class="slider_text">
+						<h2 class="subtitle">Cristian Iglesias</h2>
+						<h3 class="cargo">Cagar un cargo</h3>
+						<p class="slider_review">
+							Tecnico Universitario en Programación, y Técnico de equipos informáticos.
+						</p>
+					</div>
+					<figure class="slider_picture">
+						<img src="../img/AboutUs/Slider/cristianIglesias.jpg" class="slider_img">
+					</figure>
+				</section>
+
+				<!-- Fin de sección de información de la primera pagina. A partir de aquí se puede ir copiando y asignando un nuevo data-id para cada pagina.-->
+				<section class="slider_body" data-id="2">
+					<div class="slider_text">
+						<h2 class="subtitle">Thiago Gomez</h2>
+						<h3 class="cargo">Proyect Management and Front-End Designer</h3>
+						<p class="slider_review">
+							Front-End Developer y estudiante de Análisis de Sistemas
+						</p>
+					</div>
+					<figure class="slider_picture">
+						<img src="../img/AboutUs/Slider/perfil_thiago.jpeg" class="slider_img">
+					</figure>
+				</section>
+				<!---->
+
+				<section class="slider_body" data-id="3">
+					<div class="slider_text">
+						<h2 class="subtitle">Santiago Vicente</h2>
+						<h3 class="cargo">Trouble Shooting and Back-End Developer</h3>
+						<p class="slider_review">
+							Responsable del area de testing y mantenimiento de los componentes de la aplicacion web.
+						</p>
+					</div>
+					<figure class="slider_picture">
+						<img src="../img/AboutUs/Slider/santiagoVicente.png" class="slider_img">
+					</figure>
+				</section>
+				<!---->
+				<img src="../img/AboutUs/Slider/flechasDerecha.svg" class="slider_arrow" id="next">
+			</div>
+			<!-- Fin del cuerpo principal del slider.-->
+		</section>
+
 		<div class="panel">
 			<button class="acordeon">¿Quienes somos?</button>
 			<div class="articulo">
@@ -89,79 +115,11 @@
 			</div>
 		</div>
 
-		<!-- Inicio del cuerpo principal del slider.-->
-		<section class="slider">
-			<div class="slider_container">
-				<img src="../img/AboutUs/Slider/flechaIzquierda.svg" class="slider_arrow" id="before">
-				<!-- Inicio sección de información de la primera pagina-->
-
-				<section class="slider_body slider_body--show" data-id="1">
-					<div class="slider_text">
-						<h2 class="subtitle">Cristian Iglesias</h2>
-						<h3 class="cargo">Cagar un cargo</h3>
-						<p class="slider_review">
-							Tecnico Universitario en Programación, y Técnico de equipos informáticos.
-						</p>
-					</div>
-					<figure class="slider_picture">
-						<img src="../img/AboutUs/Slider/cristianIglesias.jpg" class="slider_img">
-					</figure>
-				</section>
-
-				<!-- Fin de sección de información de la primera pagina. A partir de aquí se puede ir copiando y asignando un nuevo data-id para cada pagina.-->
-				<section class="slider_body" data-id="2">
-					<div class="slider_text">
-						<h2 class="subtitle">Thiago Gomez</h2>
-						<h3 class="cargo">Proyect Management and Front-End Designer</h3>
-						<p class="slider_review">
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim deserunt dignissimos illum
-							dolores! Natus, dolorum?
-						</p>
-					</div>
-					<figure class="slider_picture">
-						<img src="../img/AboutUs/Slider/perfil_thiago.jpeg" class="slider_img">
-					</figure>
-				</section>
-				<!---->
-
-				<section class="slider_body" data-id="3">
-					<div class="slider_text">
-						<h2 class="subtitle">Santiago Vicente</h2>
-						<h3 class="cargo">Trouble Shooting and Back-End Developer</h3>
-						<p class="slider_review">
-							Responsable del area de testing y mantenimiento de los componentes de la aplicacion web.
-						</p>
-					</div>
-					<figure class="slider_picture">
-						<img src="../img/AboutUs/Slider/santiagoVicente.png" class="slider_img">
-					</figure>
-				</section>
-				<!---->
-				<img src="../img/AboutUs/Slider/flechasDerecha.svg" class="slider_arrow" id="next">
-			</div>
-			<!-- Fin del cuerpo principal del slider.-->
-		</section>
 		<script src="../js/slider.js"></script>
 
 	</main>
 
 	<div id="footer"></div>
-
-<!--    <footer class="footer">
-		<div class="container">       
-			<div class="autor">
-				<small> Copyright &copy; 2022 <b> Codo a Codo </b></small>
-			</div>
-			<div class="social">
-				<a class="icon-facebook" href=https://es-la.facebook.com><i class="fa-brands fa-facebook"></i></a>
-				<a class="icon-twitter" href=https://twitter.com/?lang><i class="fa-brands fa-twitter"></i></a>
-				<a class="icon-instagram" href=https://www.instagram.com><i class="fa-brands fa-square-instagram"></i></a>
-				<a class="icon-mail" href="#"><i class="fa-solid fa-envelope"></i></a>
-			</div>
-		</div>
-
-	</footer>
-	-->
 
 	<script>
 

@@ -172,7 +172,7 @@ header .container_menu{
 }
 
 .services img:hover{
-    width: 300px;
+    width: 400px;
 }
 
 .services h1{
@@ -336,7 +336,7 @@ footer .container{
     .grid{
         display: grid;
         grid-gap: 30px;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
  
     }
  
