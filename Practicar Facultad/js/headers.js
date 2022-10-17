@@ -1,24 +1,94 @@
-const  headersito=`<header>
-<div class="container_menu"> 
-    <a href="index.html"  class="logo">
-        <img class="logo_menu" src="img/logo_violeta.png" alt="">
-    </a>
-    <input type="checkbox" id="menu_bar">
-    <label for="menu_bar" class="check_btn">
-        <i class="fas fa-bars"></i>
-    </label>
-    <div class="menu">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../html/tutorialesv1.html">Tutoriales</a></li>
-                <li><a href="../html/aboutUs.html">Sobre Nosotros</a></li>
-                <li><a href="../html/contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+let headersito
+if(document.title==='Home'){
+    headersito=`<header>
+    <div class="container_menu"> 
+        <a href="index.html"  class="logo">
+            <img class="logo_menu" src="img/logo_violeta.png" alt="">
+        </a>
+        <input type="checkbox" id="menu_bar">
+        <label for="menu_bar" class="check_btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#" id="selected">Inicio</a></li>
+                    <li><a href="html/tutorialesv1.html">Tutoriales</a></li>
+                    <li><a href="html/aboutUs.html">Sobre Nosotros</a></li>
+                    <li><a href="html/contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
-</header>`;
+    </header>`;
+} else if (document.title==='Tutoriales'){
+    headersito=`<header>
+    <div class="container_menu"> 
+        <a href="index.html"  class="logo">
+            <img class="logo_menu" src="../img/logo_violeta.png" alt="">
+        </a>
+        <input type="checkbox" id="menu_bar">
+        <label for="menu_bar" class="check_btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#" id="selected">Tutoriales</a></li>
+                    <li><a href="aboutUs.html">Sobre Nosotros</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </header>`;
+} else if (document.title==='Sobre Nosotros'){
+    headersito=`<header>
+    <div class="container_menu"> 
+        <a href="index.html"  class="logo">
+            <img class="logo_menu" src="../img/logo_violeta.png" alt="">
+        </a>
+        <input type="checkbox" id="menu_bar">
+        <label for="menu_bar" class="check_btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="tutorialesv1.html">Tutoriales</a></li>
+                    <li><a href="#" id="selected">Sobre Nosotros</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </header>`;
+} else if (document.title==='Contacto'){
+    headersito=`<header>
+    <div class="container_menu"> 
+        <a href="index.html"  class="logo">
+            <img class="logo_menu" src="../img/logo_violeta.png" alt="">
+        </a>
+        <input type="checkbox" id="menu_bar">
+        <label for="menu_bar" class="check_btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="tutorialesv1.html">Tutoriales</a></li>
+                    <li><a href="aboutUs.html">Sobre Nosotros</a></li>
+                    <li><a href="#" id="selected"">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </header>`;
+}
+
 
 const footercito= `<footer class="footer">
 <div class="container">       
