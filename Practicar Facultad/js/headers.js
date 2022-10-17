@@ -19,12 +19,12 @@ if(document.title==='Home'){
                 </ul>
             </nav>
         </div>
-    </div>
+    </div>0
     </header>`;
 } else if (document.title==='Tutoriales'){
     headersito=`<header>
     <div class="container_menu"> 
-        <a href="index.html"  class="logo">
+        <a href="/index.html"  class="logo">
             <img class="logo_menu" src="../img/logo_violeta.png" alt="">
         </a>
         <input type="checkbox" id="menu_bar">
