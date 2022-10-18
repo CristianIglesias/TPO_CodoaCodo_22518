@@ -153,9 +153,10 @@ h1 {
 
 .contact-info{
     color: var(--color-secundario);
-    align-items: center;
+    text-align: left;
     padding-top: 5em;
     background: transparent;
+    margin: 50px;
 }
 
 .contact-form form{
@@ -280,7 +281,7 @@ footer .container{
 
     .contact {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     /* menu */
