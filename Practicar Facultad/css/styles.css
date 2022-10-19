@@ -140,8 +140,7 @@ header .container_menu{
 
 .banner-descripcion button:hover,
 .banner2 button:hover{
-    background-color:transparent;
-    box-shadow: 0 0 20px #4717F6;
+    box-shadow: 0 0 10px #4717F6;
 }
  
 .banner-descripcion h1{
@@ -172,7 +171,7 @@ header .container_menu{
 }
 
 .services img:hover{
-    width: 400px;
+    filter: brightness(50%);
 }
 
 .services h1{

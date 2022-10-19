@@ -13,3 +13,7 @@ function Enviar_Mail()
     consulta     = document.querySelector("#message");
     
 }
+function mensajeCorrecto()
+{
+    alert("Mensaje Enviado Correctamente")
+}

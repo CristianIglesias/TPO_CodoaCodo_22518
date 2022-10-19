@@ -151,10 +151,6 @@ h1 {
     color: var(--color-tema);
 }
 
-.paneles {
-    width: 100%;
-}
-
 .panel{
     padding: 10px;
     width: 100%;
@@ -173,7 +169,7 @@ h1 {
 /********************************************** Slider ************************************************/
 .slider{
     padding: px 0px 20px 0;
-    height: 300px;
+    height: 500px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/limpieza-sistema-800x533-OK.jpg);
     background-size: cover;
 }
@@ -190,6 +186,10 @@ h1 {
     margin: 0 auto;
 }
 
+.slider_container img{
+    margin-top: 20px;
+}
+
 .slider_body{
     grid-column: 2/3;
     grid-row: 1/2;
@@ -202,6 +202,7 @@ h1 {
     align-items: center;
     transition: opacity 1.5s;
     color: var(--color-secundario);
+    margin-top: 2em;
 }
 
 .slider_body--show{
@@ -252,6 +253,7 @@ h1 {
 .slider_arrow:nth-of-type(2){
     justify-self: end;
 }
+
 
 /****************************************** FOOTER **********************************/
 
@@ -362,6 +364,11 @@ footer .container{
         grid-template-columns: repeat(4,1fr);
     }
 /* Slider */
+
+    .slider{
+        height: 300px;
+    }
+
     .slider_container{
         margin: auto;
     }
