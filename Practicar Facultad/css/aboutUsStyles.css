@@ -129,7 +129,7 @@ h1 {
 .subtitle {
     text-align: left;
     align-items:left;
-    color: var(--color-tema);
+    color: var(--color-secundario);
     width: 100%;
 }
 
@@ -170,7 +170,7 @@ h1 {
 .slider{
     padding: px 0px 20px 0;
     height: 500px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/limpieza-sistema-800x533-OK.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/protocolo-informatico2-e1534529516444.jpg);
     background-size: cover;
 }
 

@@ -18,12 +18,13 @@
 body{
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/limpieza-sistema-800x533-OK.jpg);
+    background-size: cover;
 }
 
 /* HEADER y BARRA DE MENU*/
 .container{
-    width: 100%;
-    margin: auto;
+    width: 97%;
 }
 
 header {
@@ -119,8 +120,6 @@ header .container_menu{
     margin-right: auto;
     padding: 1.5em;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/limpieza-sistema-800x533-OK.jpg);
-    background-size: cover;
 }
 
 h1 {
@@ -161,7 +160,7 @@ h1 {
 
 .contact-form form{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
 }
 
 .contact-form form label{
@@ -184,6 +183,10 @@ h1 {
 .contact-form form p{
     margin: 0;
     padding: 1em;
+}
+
+.contact-info iframe{
+    border-radius: 6px;
 }
 
 select {
@@ -281,7 +284,7 @@ footer .container{
 
     .contact {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
 
     /* menu */
@@ -318,6 +321,7 @@ footer .container{
     #selected{
        color: var(--color-secundario);
     }
+
 }
 
 
