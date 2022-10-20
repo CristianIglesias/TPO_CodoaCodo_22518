@@ -1,0 +1,408 @@
+:root {
+    --color-tema: #0E0B16;
+    --color-principal: #A239CA;
+    --color-secundario: #E7DFDD;
+    --color-principal2:#a95dc7;
+}
+
+
+/*selector universal afecta a todos los elementos*/
+*{
+    font-family: 'Roboto Flex', sans-serif;    -webkit-font-smoothing: antialiased;
+    /*le saca los margenes a todo, luego se lo doy por elemento*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* HEADER y BARRA DE MENU*/
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    position: sticky;
+    /* ancho de toda la pagina */
+    width: 100%;
+    height: 4.126em;
+    /* para que se mantenga por emcima de todo */
+    z-index: 100;
+    background-color: var(--color-tema);
+    color: var(--color-secundario);
+    padding: 0.625em;
+}
+
+.logo_menu{
+    width: 50px;
+}
+
+.container_menu{
+    width: 95%;
+    margin: auto;
+}
+
+#menu_bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 1.75em;
+    margin: 0.375em 0;
+
+    /* cuando pasa el mause aparece la manito para apretar */
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    width: 95%;
+    height: 100vh;
+    top: 4.125em;
+    left: 0;
+    background-color: var(--color-tema);
+
+    /* aplico una transicion para que cuando aprete en las lineas se oculte o se muestre */
+    /* oculta el menu hasta que es activado */
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+header .container_menu{
+    display: table;
+}
+
+.menu ul li {
+    /* sacamos los puntos de las listas y demas */
+    list-style: none;
+}
+
+.menu ul li a{
+    /* saca las lineas de abajo de los links */
+    text-decoration: none;
+    color: var(--color-secundario);
+    /* ponemos todo en mayuscula */
+    text-transform: uppercase;
+    display: block;
+    height: 3.125em;
+    padding: 1em;
+    border-bottom: 0.0625em solid var(--color-principal);
+}
+
+.menu ul li a:hover{
+    background: var(--color-principal);
+    color: var(--color-tema);
+}
+
+.check_btn {
+    color: var(--color-principal);
+}
+
+/* para que al cliquear el logo aparezca el menu desplegable. Cuando se activa el checkbox se activa el .menu */
+#menu_bar:checked~.menu{
+    transform: translateX(0%);
+}
+
+#selected{
+    color: var(--color-secundario);
+}
+
+
+/* ARTICULOS */
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--color-tema);
+    margin: 1em;
+    width: 100%;
+}
+
+.subtitle {
+    text-align: left;
+    align-items:left;
+    color: var(--color-secundario);
+    width: 100%;
+}
+
+
+.acordeon {
+    color: var(--color-principal);
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.acordeon:hover{
+    background-color: var(--color-principal);
+    color: var(--color-tema);
+}
+
+.panel{
+    padding: 10px;
+    width: 100%;
+}
+
+.articulo {
+    padding: 20px;
+    display: none;
+    overflow: hidden;
+}
+
+.articulo p{
+    font-size: 1em;
+}
+
+/********************************************** Slider ************************************************/
+.slider{
+    padding: px 0px 20px 0;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/protocolo-informatico2-e1534529516444.jpg);
+    background-size: cover;
+}
+
+.slider_container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    min-height: 35vh;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider_container img{
+    margin-top: 20px;
+}
+
+.slider_body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+    gap: 1em;
+    align-items: center;
+    transition: opacity 1.5s;
+    color: var(--color-secundario);
+    margin-top: 2em;
+}
+
+.slider_body--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider_picture{
+    grid-row: 1/2;
+}
+
+.slider_img{
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    
+}
+
+.slider_text{
+    margin-top: 50px;
+    max-width: 500px;
+}
+
+.subtitle{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.cargo{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.slider_review{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.slider_arrow{
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    color: var(--color-secundario);
+}
+
+.slider_arrow:nth-of-type(2){
+    justify-self: end;
+}
+
+
+/****************************************** FOOTER **********************************/
+.api{
+    color: #ffffff4a;
+}
+
+.api span:nth-child(2){
+    margin-right: 2em;
+}
+
+footer{
+    background-color: var(--color-tema);
+    color: var(--color-secundario);
+    margin-top: auto;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1.5625em;
+}
+
+.copy{
+    font-size: 1em;
+}
+
+.social{
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.social a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-principal);
+    padding-left: 0.5em;
+}
+
+
+@media (min-width: 780px){
+
+    h1{
+        font-size: 30px;
+    }    
+    .grid{
+       display: grid;
+       grid-gap: 30px;
+       grid-template-columns: repeat(2,1fr);
+    }
+
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        background-color: var(--color-tema);
+    }
+    
+    .menu ul{
+        display: flex;
+    }
+    
+    .menu ul li a{
+        /* ponemos todo en mayuscula */
+        text-transform: uppercase;
+        color: var(--color-principal);
+        border-bottom: none;
+    }
+
+    header label{
+        display: none;
+    }
+
+    .menu ul li a:hover{
+        background: var(--color-principal);
+        color: var(--color-secundario);
+        border-radius: 10px;
+    }
+
+    #selected{
+       color: var(--color-secundario);
+    }
+/* Slider */
+    .slider_body{
+        grid-template-columns: 1fr max-content;
+        grid-template-rows: 1fr;
+        gap: 0em;
+    }
+
+    .slider_picture{
+        grid-row: 1;
+    }
+
+    .slider_img{
+        width: 180px;
+        height: 180px;
+        color: var(--color-secundario);
+    }
+
+    .slider_text{
+        max-width: 500px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .grid{
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(4,1fr);
+    }
+/* Slider */
+
+    .slider{
+        height: 300px;
+    }
+
+    .slider_container{
+        margin: auto;
+    }
+
+    .slider_body{
+        grid-template-columns: 1fr max-content;
+        grid-template-rows: 1fr;
+        gap: 0em;
+    }
+
+    .slider_picture{
+        grid-row: 1;
+    }
+
+    .slider_img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .slider_arrow{
+        width: 100%;
+    }
+
+    .slider_text{
+        max-width: 500px;
+    }
+}

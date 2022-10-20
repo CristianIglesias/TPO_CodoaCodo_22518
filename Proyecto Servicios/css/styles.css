@@ -1,0 +1,352 @@
+:root {
+    --color-tema: #0E0B16;
+    --color-principal: #A239CA;
+    --color-secundario: #ffffffb8;
+    --color-principal2:#a95dc7;
+}
+
+
+/*selector universal afecta a todos los elementos*/
+*{
+    font-family: 'Roboto Flex', sans-serif;    -webkit-font-smoothing: antialiased;
+    /*le saca los margenes a todo, luego se lo doy por elemento*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER y BARRA DE MENU*/
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    position: sticky;
+    /* ancho de toda la pagina */
+    width: 100%;
+    height: 4.126em;
+    /* para que se mantenga por emcima de todo */
+    z-index: 100;
+    background-color: var(--color-tema);
+    color: var(--color-secundario);
+    padding: 0.625em;
+}
+
+.logo_menu{
+    width: 50px;
+}
+
+.container_menu{
+    width: 95%;
+    margin: auto;
+}
+
+#menu_bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 1.75em;
+    margin: 0.375em 0;
+
+    /* cuando pasa el mause aparece la manito para apretar */
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    width: 95%;
+    height: 100vh;
+    top: 4.125em;
+    left: 0;
+    background-color: var(--color-tema);
+
+    /* aplico una transicion para que cuando aprete en las lineas se oculte o se muestre */
+    /* oculta el menu hasta que es activado */
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+header .container_menu{
+    display: table;
+}
+
+.menu ul li {
+    /* sacamos los puntos de las listas y demas */
+    list-style: none;
+}
+
+.menu ul li a{
+    /* saca las lineas de abajo de los links */
+    text-decoration: none;
+    color: var(--color-secundario);
+    /* ponemos todo en mayuscula */
+    text-transform: uppercase;
+    display: block;
+    height: 3.125em;
+    padding: 1em;
+    border-bottom: 0.0625em solid var(--color-principal);
+}
+
+.menu ul li a:hover{
+    background: var(--color-principal);
+    color: var(--color-tema);
+}
+
+.check_btn {
+    color: var(--color-principal);
+}
+
+/* para que al cliquear el logo aparezca el menu desplegable. Cuando se activa el checkbox se activa el .menu */
+#menu_bar:checked~.menu{
+    transform: translateX(0%);
+}
+
+#selected{
+    color: var(--color-secundario);
+}
+
+.banner{
+    height: 50vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cyber-gabc90b279_1920.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-descripcion {
+    position: absolute;
+    text-align: center;
+    color: var(--color-tema);
+    transform: translateX(-50%) translateY(-50%);
+    top: 40%;
+    left: 50%;
+    width: 95%;
+    font-size: 1em;
+    margin-top: 1.5em;
+}
+
+.banner-descripcion button,
+.banner2 button{
+    background-color: #4717F6;
+    border: none;
+    color: var(--color-secundario);
+    padding: 12px;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
+.banner-descripcion button:hover,
+.banner2 button:hover{
+    box-shadow: 0 0 10px #4717F6;
+}
+ 
+.banner-descripcion h1{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-secundario);
+    padding: 0.3em;
+}
+
+.banner-descripcion p{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-secundario);
+    font-size: 1.5em;
+    padding: 0.3em;
+}
+
+.boton_texto{
+    background: transparent;
+    border: 2px solid #4717F6;
+    color: var(--color-tema);
+    padding: 12px;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
+.boton_texto:hover {
+    background-color: #4717F6;
+    color: var(--color-secundario);
+}
+
+.services img:hover{
+    filter: brightness(50%);
+}
+
+.services h1{
+    text-align: center;
+    color: var(--color-tema);
+    border-radius: 6px;
+}
+
+.services p, h3{
+    text-align: left;
+    color: var(--color-tema);
+    margin-bottom: 10px;
+}
+
+.services{
+    color: var(--color-secundario);
+    padding: 30px;
+    background-color:var(--color-secundario);
+}
+
+.grid img{
+    align-items: center;
+    width: 100%;
+}
+
+.services .container {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.service{
+    align-items: left;
+    text-align: left;
+    margin: 1em;
+}
+
+.banner2{
+    height: 50vh;
+    color: var(--color-secundario);
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cyber-gabc90b279_1920.jpg);
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner2 h1{
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-secundario);
+}
+
+.banner2 p{
+    font-size: 1.5em;
+    padding: 0.1em;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-secundario);
+}
+
+.banner2-info{
+    position: absolute;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--color-tema);
+    color: var(--color-secundario);
+    margin-top: auto;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1.5625em;
+}
+
+.copy{
+    font-size: 1em;
+}
+
+.social{
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.social a{
+    text-align: center;
+
+    text-decoration: none;
+    color: var(--color-principal);
+    padding-left: 0.5em;
+}
+
+.api{
+    color: #ffffff4a;
+}
+
+.api span:nth-child(2){
+    margin-right: 2em;
+}
+
+@media (min-width: 780px){
+
+    h1{
+        font-size: 30px;
+    }    
+    .grid{
+       display: grid;
+       grid-gap: 30px;
+       grid-template-columns: repeat(2,1fr);
+
+    }
+
+    .services .container{
+        grid-template-columns: (2,1fr);
+    }
+
+    /* menu */
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        background-color: var(--color-tema);
+    }
+    
+    .menu ul{
+        display: flex;
+    }
+    
+    .menu ul li a{
+        /* ponemos todo en mayuscula */
+        text-transform: uppercase;
+        color: var(--color-principal);
+        border-bottom: none;
+    }
+
+    header label{
+        display: none;
+    }
+
+    .menu ul li a:hover{
+        background: var(--color-principal);
+        color: var(--color-secundario);
+        border-radius: 10px;
+    }
+
+    #selected{
+       color: var(--color-secundario);
+    }
+}
+
+@media(min-width: 1024px) {
+    .grid{
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(3,1fr);
+ 
+    }
+ 
+    .services .container{
+        grid-template-columns: (4,1fr);
+    }
+}

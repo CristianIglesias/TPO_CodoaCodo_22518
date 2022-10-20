@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sobre Nosotros</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap"
+		rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/694751370e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+		integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="../css/aboutUsStyles.css">
+	<link rel="shortcut icon" href="../img/logo_violeta.png" type="image/x-icon">
+	<script defer src="../js/headers.js"></script>
+
+</head>
+
+<body>
+	<div id="header"></div>
+
+	<main class="content">
+		<!-- Inicio del cuerpo principal del slider.-->
+		<section class="slider">
+			<div class="slider_container">
+				<img src="../img/AboutUs/Slider/flechaIzquierda.svg" class="slider_arrow" id="before">
+				<!-- Inicio sección de información de la primera pagina-->
+
+				<section class="slider_body slider_body--show" data-id="1">
+					<div class="slider_text">
+						<h2 class="subtitle">Cristian Iglesias</h2>
+						<h3 class="cargo">Cagar un cargo</h3>
+						<p class="slider_review">
+							Tecnico Universitario en Programación, y Técnico de equipos informáticos.
+						</p>
+					</div>
+					<figure class="slider_picture">
+						<img src="../img/AboutUs/Slider/cristianIglesias.jpg" class="slider_img">
+					</figure>
+				</section>
+
+				<!-- Fin de sección de información de la primera pagina. A partir de aquí se puede ir copiando y asignando un nuevo data-id para cada pagina.-->
+				<section class="slider_body" data-id="2">
+					<div class="slider_text">
+						<h2 class="subtitle">Thiago Gomez</h2>
+						<h3 class="cargo">Project Manager and Front-End Designer</h3>
+						<p class="slider_review">
+							Front-End Developer y estudiante de Análisis de Sistemas
+						</p>
+					</div>
+					<figure class="slider_picture">
+						<img src="../img/AboutUs/Slider/perfil_thiago.jpeg" class="slider_img">
+					</figure>
+				</section>
+				<!---->
+
+				<section class="slider_body" data-id="3">
+					<div class="slider_text">
+						<h2 class="subtitle">Santiago Vicente</h2>
+						<h3 class="cargo">Trouble Shooting and Back-End Developer</h3>
+						<p class="slider_review">
+							Responsable del area de testing y mantenimiento de los componentes de la aplicacion web.
+						</p>
+					</div>
+					<figure class="slider_picture">
+						<img src="../img/AboutUs/Slider/santiagoVicente.png" class="slider_img">
+					</figure>
+				</section>
+				<!---->
+				<img src="../img/AboutUs/Slider/flechasDerecha.svg" class="slider_arrow" id="next">
+			</div>
+			<!-- Fin del cuerpo principal del slider.-->
+		</section>
+		<div class="paneles">
+
+			<div class="panel">
+				<button class="acordeon">¿Quienes somos?</button>
+				<div class="articulo">
+					<p>Somos un grupo de jovenes desarroladores que se juntaron al cursar el programa <strong>"Codo a
+						Codo"</strong> de la <strong>"Agencia de Aprendizaje a lo Largo de la Vida"</strong> del
+					<strong>Gobierno de la Ciudad Autonoma de Buenos Aires.</strong>Cursando en la comisión 22518 de
+					<strong>Desarrollo Web Full Stack Python</strong>, se nos ofrecio la posibilidad de iniciar con este
+					proyecto como un trabajo practico integrador de la primera etapa del curso, utilizando contenido
+					HyperText Markup Language, Cascading Style Sheets y el lenguaje de programación JavaScript.</p>
+				</div>
+			</div>
+			<div class="panel">
+	
+				<button class="acordeon">Nuestra Visión</button>
+				<div class="articulo">
+					<p>Administrar una base de conocimiento por la cual se encuentren disponibles un gran catálogo de
+						soluciones posibles a los problemas de informatica casera que puera tener cualqueir usuario
+						promedio.</p>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed autem repellendus maiores voluptas
+						alias porro?</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis cupiditate in eius aut modi
+						deserunt, ab neque facilis, voluptates fugiat, ut veritatis adipisci dolorem.</p>
+				</div>
+			</div>
+	
+			<div class="panel">
+	
+				<button class="acordeon">Nuestra Misión</button>
+				<div class="articulo">
+					<p>Facilitar el acceso a soluciones simples para que cualquier persona con poco conocimiento sobre
+						informatica en general, pueda realizar un autodianostico de las posibles fallas de sus dispositivos.
+					</p>
+					<p>Habiendo obtenido un diagnostico del inconveniente presentado, poder proponerle al usuario una serie
+						de herramientas con las que pueda llegar a solucionarlo.</p>
+					<p>Si el usuario no lograra dar con una solución a su inconveniente, facilitarle el contacto de un
+						operador con el cual pueda ver la incidencia</p>
+					<p>Fomentar mediante la experiencia a los usuarios a realizar un minimo reconocimiento de los posibles origenes de los inconvenientes que se pueden estar presentando.</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/slider.js"></script>
+
+	</main>
+
+	<div id="footer"></div>
+
+	<script>
+
+		let elementsAcordeon = document.getElementsByClassName("acordeon")
+
+		for(let i = 0; i < elementsAcordeon.length; i ++){
+			elementsAcordeon[i].addEventListener("click", function(){
+				this.classList.toggle("active");
+				let articulo = this.nextElementSibling;
+				if(articulo.style.display == "block"){
+					articulo.style.display = "none"
+				}else{
+					articulo.style.display = "block";
+				}
+			})
+		}
+	</script>
+</body>
+
+</html>
