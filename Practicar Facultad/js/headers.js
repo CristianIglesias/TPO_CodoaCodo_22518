@@ -110,7 +110,7 @@ const mostrarData = (data) => {
                 <a class="icon-mail" href="#"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
-        <div class="container" "autor">
+        <div class="api">
             <span>Direccion Ip:</span>
             <span>${data.client_ip}</span>
             <span>Fecha y Hora:</span>

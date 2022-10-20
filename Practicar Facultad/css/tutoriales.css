@@ -164,10 +164,9 @@ header .container_menu{
     width: 100%;
     max-width: 1100px;
     margin: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 250px;
     grid-gap: 10px;
 }
@@ -181,18 +180,7 @@ header .container_menu{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.container-videos .tutorial iframe:hover{
-    filter: brightness(50%);
-}
-
-.container-videos .tutorial:nth-child(1){
-   grid-column-start: span 2;
-}
-
-.container-videos .tutorial:nth-child(4){
-    grid-column-start: span 2;
+    padding: 5px;
 }
  
 .banner2{
@@ -229,6 +217,13 @@ header .container_menu{
 }
 
 /* FOOTER */
+.api{
+    color: #ffffff4a;
+}
+
+.api span:nth-child(2){
+    margin-right: 2em;
+}
 
 footer{
     background-color: var(--color-tema);
@@ -259,7 +254,6 @@ footer .container{
 
 .social a{
     text-align: center;
-
     text-decoration: none;
     color: var(--color-principal);
     padding-left: 0.5em;
@@ -268,18 +262,57 @@ footer .container{
 
 @media (min-width: 780px){
 
+    .tutoriales {
+        background-color: var(--color-secundario);
+    }
+
+    .container-videos{
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 250px;
+        grid-gap: 10px;
+        background-color: var(--color-secundario);
+
+    }
+    
+    .container-videos .tutorial{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .container-videos .tutorial iframe{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .container-videos .tutorial iframe:hover{
+        filter: brightness(50%);
+    }
+    
+    .container-videos .tutorial:nth-child(1){
+       grid-column-start: span 2;
+    }
+    
+    .container-videos .tutorial:nth-child(4){
+        grid-column-start: span 2;
+    }
+
     h1{
         font-size: 30px;
     }    
+    .tutoriales h1{
+        margin-top: 30px;
+    }
     .grid{
        display: grid;
        grid-gap: 30px;
        grid-template-columns: repeat(2,1fr);
-
-    }
-
-    .services .container{
-        grid-template-columns: (2,1fr);
     }
 
     /* menu */
@@ -324,5 +357,4 @@ footer .container{
         grid-gap: 30px;
         grid-template-columns: repeat(3,1fr);
     }
- 
 }

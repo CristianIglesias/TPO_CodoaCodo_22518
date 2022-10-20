@@ -245,6 +245,14 @@ option{
 
 /* FOOTER */
 
+.api{
+    color: #ffffff4a;
+}
+
+.api span:nth-child(2){
+    margin-right: 2em;
+}
+
 footer{
     background-color: var(--color-tema);
     color: var(--color-secundario);

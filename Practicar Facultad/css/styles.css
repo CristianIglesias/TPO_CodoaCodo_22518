@@ -278,6 +278,13 @@ footer .container{
     padding-left: 0.5em;
 }
 
+.api{
+    color: #ffffff4a;
+}
+
+.api span:nth-child(2){
+    margin-right: 2em;
+}
 
 @media (min-width: 780px){
 
