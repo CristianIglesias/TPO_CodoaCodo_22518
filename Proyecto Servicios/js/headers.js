@@ -19,7 +19,7 @@ if(document.title==='Home'){
                 </ul>
             </nav>
         </div>
-    </div>0
+    </div>
     </header>`;
 } else if (document.title==='Tutoriales'){
     headersito=`<header>
