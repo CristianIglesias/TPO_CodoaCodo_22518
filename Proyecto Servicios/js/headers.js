@@ -91,7 +91,7 @@ if(document.title==='Home'){
     </header>`;
 }
 
-fetch('http://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires')
+fetch('https://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires')
 .then(Response=>Response.json())
 .then(data=>mostrarData(data))
 .catch(error => console.log("Ocurrió un error", error))

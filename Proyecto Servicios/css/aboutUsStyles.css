@@ -169,7 +169,7 @@ h1 {
 /********************************************** Slider ************************************************/
 .slider{
     padding: px 0px 20px 0;
-    height: 500px;
+    height: 570px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/protocolo-informatico2-e1534529516444.jpg);
     background-size: cover;
 }
